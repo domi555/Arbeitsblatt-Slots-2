@@ -1,0 +1,21 @@
+PROP vs. SLOT --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+
+Beide Arten Daten auszutauschen sind zulässig und können angewandt werden.
+
+Einsatz von SLOT
+
+Mit diesem Ansatz sind wir viel flexibler: Wir können in beiden Slots beliebige
+Inhalte setzen, wir müssen keine Inhalte in unserer Child-Komponente vordefinieren.
+Das macht die Komponente viel besser wiederverwendbar.
+
+Wir können sogar andere Komponenten an unsere Child-Komponente übergeben.
+Nehmen wir an, wir haben eine Bild-/Icon-Komponente, die wir anstelle von 
+FontAwesome-Icons verwenden möchten. Dann übergeben wir die Komponente einfach
+im Icon-Slot.
+
+Man braucht keine IF/ELSE-Klausel innerhalb der Child-Komponente. Entweder man
+gibt die Daten weiter oder nicht. Es muss nicht überprüft werden, ob etwas vorhanden
+ist oder nicht.
+
+Last but not least: Die Komponente selbst ist viel besser lesbar und weniger verwirrend. 
+
